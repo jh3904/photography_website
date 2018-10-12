@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+	<title>Jeff Huang Photography</title>
+  <link rel="shortcut icon" type="image/png" href="imgs/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function() {
+    	$("body").css("display", "none");
+    	$("body").fadeIn(500);
+    	$("a.transition").click(function(event){
+        	event.preventDefault();
+        	linkLocation = this.href;
+        	$("body").fadeOut(500, redirectPage);      
+    	});
+    	function redirectPage() {
+        	window.location = linkLocation;
+    	}
+	});
+	</script>
+	<script type="text/javascript">
+	$(document).ready( function() {
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    gutter: '.gutter-sizer',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  $("img").hide();
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().always( function() {
+  	$("img").show().delay(1000).fadeIn();
+    $grid.masonry();
+    $(".cssload-container").hide();
+  	$(".cssload-speeding-wheel").hide();
+  });  
+});
+	</script>
+</head>
+<body>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="index.html">JEFF HUANG<br />
+                        PHOTOGRAPHY</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="index.html" class="transition">Home</a></li>
+                              <li><a href="people.html" class="transition">People</a></li>
+                              <li><a href="nature.html" class="transition">Nature</a></li>
+                              <li><a href="city.html" class="transition">City</a></li>
+                              <li><a href="abstract.html" class="transition">Abstract</a></li>
+                              <li><a href="about.html" class="transition">About</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+      <div class="grid">
+      	<div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+      	<div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1u5lQuZHnMhZw9mX6s1CVtNLnpOe8Ng6-" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1u5lQuZHnMhZw9mX6s1CVtNLnpOe8Ng6-"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1rtAPkowCTjj_B9eYGO7XVG0ZCKgMCfm0" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1rtAPkowCTjj_B9eYGO7XVG0ZCKgMCfm0"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1VmPZjV3GOkH-Cla2Rup6ISvikyG7xXFl" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1VmPZjV3GOkH-Cla2Rup6ISvikyG7xXFl"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1w-G_q5rv7bvRSRL7KgH_vm6LG_SwGbGq" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1w-G_q5rv7bvRSRL7KgH_vm6LG_SwGbGq"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18abkTapOj7Pw1EP1uoKTxUvIirhA_zaT" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=18abkTapOj7Pw1EP1uoKTxUvIirhA_zaT"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1__lwrQq5JWHiE4asyamhCdlntLR9Tjrm" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1__lwrQq5JWHiE4asyamhCdlntLR9Tjrm"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1NJjgS7t6p2Ln6iY5zyjV8tygH2XdXUhf" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1NJjgS7t6p2Ln6iY5zyjV8tygH2XdXUhf"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1fPNJA3mITlL5ypBpu5ww4rxueZBnc-3I" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1fPNJA3mITlL5ypBpu5ww4rxueZBnc-3I"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1dh7XaUXvtRFzorWtB4WyJzwnmyvpSvBA" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1dh7XaUXvtRFzorWtB4WyJzwnmyvpSvBA"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1wPWan99NcrHp4AkwNExmKlmiILRRR4hW" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1wPWan99NcrHp4AkwNExmKlmiILRRR4hW"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1Ks48mXQBiHFOQLmu5ijcRD5YotBTIziS" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1Ks48mXQBiHFOQLmu5ijcRD5YotBTIziS"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1kPN-ANnE5QOTePW2KvvEPFMVfgZqxD1D" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1kPN-ANnE5QOTePW2KvvEPFMVfgZqxD1D"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1EEYgjrXEwZqshq1P2XV5lPrbr-Xd9oHI" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1EEYgjrXEwZqshq1P2XV5lPrbr-Xd9oHI"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1C333rxdNrgwrh9QX0YIxFGQe4MDepn0f" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1C333rxdNrgwrh9QX0YIxFGQe4MDepn0f"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1np-y-p_ph1Dq-DTggrtLIY7FFmyqT-vC" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1np-y-p_ph1Dq-DTggrtLIY7FFmyqT-vC"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1t0SN0yJgFoB0pitf1UpxzfEs9kzNcTqB" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1t0SN0yJgFoB0pitf1UpxzfEs9kzNcTqB"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=10yzerdMpiYVF93jFR07zZegkvxNfLarc" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=10yzerdMpiYVF93jFR07zZegkvxNfLarc"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1PYc87AGmmYzRCNpAY4_Z-EoU_ltdtWD7" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1PYc87AGmmYzRCNpAY4_Z-EoU_ltdtWD7"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18lR8kL25W9Matk_RAv1tm_whTtVD9aKA" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=18lR8kL25W9Matk_RAv1tm_whTtVD9aKA"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1-LlM5BD2UykjpNo5xrIkLj8yqUzuOQxy" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1-LlM5BD2UykjpNo5xrIkLj8yqUzuOQxy"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18olzIxwETNs-b5aNvBsDoAx8OqA4arEa" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=18olzIxwETNs-b5aNvBsDoAx8OqA4arEa"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1DogFjISjBinhwIvohhgtuPm47p-nbMAT" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1DogFjISjBinhwIvohhgtuPm47p-nbMAT"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=12a2juIrU0t1cs27XDa0fJxqKfMkpbyzI" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=12a2juIrU0t1cs27XDa0fJxqKfMkpbyzI"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1F2eh375qoNfEkeuSMY8NM8uOU17nVs0X" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1F2eh375qoNfEkeuSMY8NM8uOU17nVs0X"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1qlitdjkBHaALs1bKqv1dsoLmrBAPhZ5V" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1qlitdjkBHaALs1bKqv1dsoLmrBAPhZ5V"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=182linpyjazdtGxPRHCRLUISv9cfZXgbJ" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=182linpyjazdtGxPRHCRLUISv9cfZXgbJ"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1eWhlwbU2fSKh5SF7bLYeGXOBtCAshkDT" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1eWhlwbU2fSKh5SF7bLYeGXOBtCAshkDT"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18Aus_Ud2-CWmMiF_RsiQEb6cMM-Wsjvm" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=18Aus_Ud2-CWmMiF_RsiQEb6cMM-Wsjvm"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1yOL9vVUnsFNoFpUWdz2LYPpmU9AwDJe4" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1yOL9vVUnsFNoFpUWdz2LYPpmU9AwDJe4"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1Goihs4ELbYJ4ZwBbkp-PAxKRFFDh4ALG" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1Goihs4ELbYJ4ZwBbkp-PAxKRFFDh4ALG"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1FYPUu7vGsnMwrugzQdIHWE5v8QmLobMF" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1FYPUu7vGsnMwrugzQdIHWE5v8QmLobMF"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1ZVF9-NIKSFuuYMhNOeOvrAr_8xXawXKE" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1ZVF9-NIKSFuuYMhNOeOvrAr_8xXawXKE"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1aSA6fBcAhyKXjFTcIu2WTUtzRhLFIQVx" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1aSA6fBcAhyKXjFTcIu2WTUtzRhLFIQVx"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1iPDL5xt7mHJ8pOXO_crBJEu4Xb8vNOwN" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1iPDL5xt7mHJ8pOXO_crBJEu4Xb8vNOwN"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1vCiCXwqenA2MUhXlHu24mJVw3ZyEXy8p" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1vCiCXwqenA2MUhXlHu24mJVw3ZyEXy8p"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1JmnXMWrdpWt96VmV5GT2GwuJlI6ShFn1" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1JmnXMWrdpWt96VmV5GT2GwuJlI6ShFn1"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=12FOAQwJbNExET5lTydmVk-OTrux09GWM" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=12FOAQwJbNExET5lTydmVk-OTrux09GWM"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1CX6swcB6O8pqgFtWZgHMwEGJXeo2z7u7" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1CX6swcB6O8pqgFtWZgHMwEGJXeo2z7u7"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=19OB2ohBSynyXxwxyAMA2v8kzU2NdeK-i" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=19OB2ohBSynyXxwxyAMA2v8kzU2NdeK-i"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=11hLxdbZIwKRsdLa0TVD1sBL1OnCNU1YF" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=11hLxdbZIwKRsdLa0TVD1sBL1OnCNU1YF"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18NtZaPYxb9BegiO41vV6ta6QDWHJsquS" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=18NtZaPYxb9BegiO41vV6ta6QDWHJsquS"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1EbTIUe8XaBUATrg7jK6T7EVldOY5zJBW" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1EbTIUe8XaBUATrg7jK6T7EVldOY5zJBW"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1oM2A4LnvZ2kvCy4mcbY7Q0hZEL70qQFY" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1oM2A4LnvZ2kvCy4mcbY7Q0hZEL70qQFY"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1cV8RwB2Zfa7BOx4L8nkhHAbns6p_Qr4V" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1cV8RwB2Zfa7BOx4L8nkhHAbns6p_Qr4V"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1Gpb3HeWmtf4hhsobswoc89Nu_opyAQV6" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1Gpb3HeWmtf4hhsobswoc89Nu_opyAQV6"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1SUXP6k9uugwxgSr9h_6bPakaL3n3MMWy" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1SUXP6k9uugwxgSr9h_6bPakaL3n3MMWy"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1DzQFgSYW7V5N6c3hrIpcVzaXRNYpuVM7" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1DzQFgSYW7V5N6c3hrIpcVzaXRNYpuVM7"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1nMBZoJGM9-JG0AzZb9eV1Y2ztP1ztTs7" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1nMBZoJGM9-JG0AzZb9eV1Y2ztP1ztTs7"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1LTtsEnUneBH6V_rPY9lj4JDiohA6IK_9" data-lightbox="city"><img src="https://drive.google.com/uc?export=view&id=1LTtsEnUneBH6V_rPY9lj4JDiohA6IK_9"></a>
+        </div>
+      </div>
+      	<div class="cssload-container">
+		<div class="cssload-speeding-wheel"></div>
+		</div>
+</body>
+</html>

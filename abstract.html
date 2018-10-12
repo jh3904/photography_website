@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+	<title>Jeff Huang Photography</title>
+  <link rel="shortcut icon" type="image/png" href="imgs/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function() {
+    	$("body").css("display", "none");
+    	$("body").fadeIn(500);
+    	$("a.transition").click(function(event){
+        	event.preventDefault();
+        	linkLocation = this.href;
+        	$("body").fadeOut(500, redirectPage);      
+    	});
+    	function redirectPage() {
+        	window.location = linkLocation;
+    	}
+	});
+	</script>
+	<script type="text/javascript">
+	$(document).ready( function() {
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    gutter: '.gutter-sizer',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  $("img").hide();
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().always( function() {
+    $("img").show().delay(1000).fadeIn();
+    $grid.masonry();
+    $(".cssload-container").hide();
+    $(".cssload-speeding-wheel").hide();
+  });  
+});
+	</script>
+</head>
+<body>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="index.html">JEFF HUANG<br />
+                        PHOTOGRAPHY</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="index.html" class="transition">Home</a></li>
+                              <li><a href="people.html" class="transition">People</a></li>
+                              <li><a href="nature.html" class="transition">Nature</a></li>
+                              <li><a href="city.html" class="transition">City</a></li>
+                              <li><a href="abstract.html" class="transition">Abstract</a></li>
+                              <li><a href="about.html" class="transition">About</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+      <div class="grid">
+      	<div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+      	<div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1GubqaKknViIxcrBIhqbbaDOiNDEK9bjZ" data-lightbox="abstract"><img src="https://drive.google.com/uc?export=view&id=1GubqaKknViIxcrBIhqbbaDOiNDEK9bjZ"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=1-hhwvyUDm-VCuk10nhVEMe_4Hs-8rtvK" data-lightbox="abstract"><img src="https://drive.google.com/uc?export=view&id=1-hhwvyUDm-VCuk10nhVEMe_4Hs-8rtvK"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=10EA_RGai5IRmeqtgkgPevKFB0Re9E3f1" data-lightbox="abstract"><img src="https://drive.google.com/uc?export=view&id=10EA_RGai5IRmeqtgkgPevKFB0Re9E3f1"></a>
+        </div>
+        <div class="grid-item">
+            <a href="https://drive.google.com/uc?export=view&id=18RUhFTdn8yg_NBE5ZKk1brmIRTFleuWM" data-lightbox="abstract"><img src="https://drive.google.com/uc?export=view&id=18RUhFTdn8yg_NBE5ZKk1brmIRTFleuWM"></a>
+        </div>
+      </div>
+    <div class="cssload-container">
+    <div class="cssload-speeding-wheel"></div>
+    </div>
+</body>
+</html>

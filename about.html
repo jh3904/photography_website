@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<title>Jeff Huang Photography</title>
+  	<link rel="shortcut icon" type="image/png" href="imgs/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function() {
+    	$("body").css("display", "none");
+    	$("body").fadeIn(500);
+    	$("a.transition").click(function(event){
+        	event.preventDefault();
+        	linkLocation = this.href;
+        	$("body").fadeOut(500, redirectPage);      
+    	});
+    	function redirectPage() {
+        	window.location = linkLocation;
+    	}
+	});
+	</script>
+</head>
+<body>
+	<div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="index.html">JEFF HUANG<br />
+                        PHOTOGRAPHY</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="index.html" class="transition">Home</a></li>
+                              <li><a href="people.html" class="transition">People</a></li>
+                              <li><a href="nature.html" class="transition">Nature</a></li>
+                              <li><a href="city.html" class="transition">City</a></li>
+                              <li><a href="abstract.html" class="transition">Abstract</a></li>
+                              <li><a href="about.html" class="transition">About</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+      <div class="about">
+      	<div class="aboutImage">
+      	<img src="imgs/about.jpg">
+      	</div>
+      	<p class="aboutText">To me, photography is not just about taking an image, it's about the thrill of chasing the perfect shot. Whether I am hiking in the wee hours of the morning to get a picture of mist rolling over Hurricane Ridge or standing knee deep in the cold La Jolla surf with my tripod waiting for the sun to set, I try to immerse myself in the elements. And even if I never click the shutter, I never regret trying to explore and fight to see the world through a unique perspective.<br><br/>
+
+        As a kid, I had some experience with other art mediums, but photography really had a way of grounding me into nature, people, and reality. I desperately wanted to create memorable images, so I watched countless Youtube videos and spent hours examining Ansel Adams's landscapes of Half Dome and Joel Meyerowitz's scenes of Provincetown. I learned about the importance of exposure, the significance of lines and shapes in composition, and the necessity of seeing things through different perspectives. I took numerous pictures, training my mind to be creative while still maintaining a sense of authenticity. I learned that technique was a means of transforming a scene into a photograph as accurately as possible while recognizing the importance of eliciting a response in the viewer--even if the viewer is just me.<br><br/>
+
+        I've also realized that my love for photography, this medium of self-expression, goes beyond the art itself; it's an important connection that I have with the more explorative and curious part of my identity. Every photo I take, whether in the sun-kissed canals of Venice or in my backyard, inspires me to study life, learn, grow, and find some meaning in it all.<br><br/>
+
+        As an individual constantly searching for meaning in my life, I try to look beyond what I am familiar with and never neglect the unknown. Traversing new paths and exploring new frontiers imparts a creative perspective in my everlasting journey towards self-actualization. Whether the voyage is through thick rainforests, gravel paths, or misty mountains, I rely on my own curiosity to find what is uncertain. The more places I discover, the closer I get to discovering myself.<br><br/><br><br/><br><br/>
+</p>
+      </div>
+</body>
